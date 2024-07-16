@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> INSTA</title>
+</head>
+<body>
+    <h2 >this is page belonghs to ?<%=username%></h2>
+    <button>follow</button>
+    <button>Message</button>
+    <h3>accounts that follow u:</h3>
+     <ul>
+        <% for(let i = 0; i < followers.length; i++){ %>
+            <li><%= followers[i] %></li>
+        <% } %>
+        <!-- another way -->
+        <% for(let nums of followers){%>
+            <li><%= nums %></li>
+        <% } %>
+
+     </ul>
+</body>
+</html>
